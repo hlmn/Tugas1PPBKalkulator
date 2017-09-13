@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.muhammadhilman.tugas1ppbkalkulator.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp"
+
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="30dp"
+    >
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Hello World!"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/step"
+            android:textSize="40sp"
+            android:textColor="@android:color/darker_gray"/>
+        <EditText
+            android:id="@+id/hasil"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            android:textSize="@dimen/textsizehasil"
+            android:text="@string/texthasil"
+            android:layout_below="@+id/step"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <Button
+            android:id="@+id/tombol7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:layout_below="@+id/hasil"
+
+            android:textSize="40sp"/>
+        <Button
+            android:id="@+id/tombol8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:layout_toRightOf="@+id/tombol7"
+            android:layout_below="@+id/hasil"
+
+            android:textSize="40sp"/>
+        <Button
+            android:id="@+id/tombol9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:layout_toRightOf="@+id/tombol8"
+            android:layout_below="@+id/hasil"
+
+            android:textSize="40sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:id="@+id/tombol4"
+            android:layout_below="@+id/tombol7"
+            android:textSize="40sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:id="@+id/tombol5"
+            android:layout_toRightOf="@+id/tombol4"
+            android:layout_below="@+id/tombol8"
+            android:textSize="40sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:id="@+id/tombol6"
+            android:layout_toRightOf="@+id/tombol5"
+            android:layout_below="@+id/tombol9"
+            android:textSize="40sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/tombol1"
+            android:layout_below="@+id/tombol4"
+            android:textSize="40sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:id="@+id/tombol2"
+            android:layout_toRightOf="@+id/tombol1"
+            android:layout_below="@+id/tombol5"
+            android:textSize="40sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:id="@+id/tombol3"
+            android:layout_toRightOf="@+id/tombol2"
+            android:layout_below="@+id/tombol6"
+            android:textSize="40sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/tombol0"
+            android:layout_below="@+id/tombol1"
+            android:textSize="40sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:id="@+id/tomboldot"
+            android:layout_below="@+id/tombol2"
+            android:layout_toRightOf="@+id/tombol0"
+            android:textSize="40sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:id="@+id/tombolequal"
+            android:layout_below="@+id/tombol3"
+            android:layout_toRightOf="@+id/tomboldot"
+            android:textSize="40sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:id="@+id/tombolbagi"
+            android:layout_below="@+id/hasil"
+            android:layout_toRightOf="@+id/tombol9"
+            android:textSize="40sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:id="@+id/tombolkali"
+            android:layout_below="@+id/tombolbagi"
+            android:layout_toRightOf="@+id/tombol6"
+            android:textSize="40sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/tombolkurang"
+            android:layout_below="@+id/tombolkali"
+            android:layout_toRightOf="@+id/tombol3"
+            android:textSize="40sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/tomboltambah"
+            android:layout_below="@+id/tombolkurang"
+            android:layout_toRightOf="@+id/tombolequal"
+            android:textSize="40sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tombol0"
+            android:id="@+id/tombolreset"
+            android:text="C"
+            android:textSize="40sp"
+            android:layout_alignRight="@+id/tomboltambah"
+            android:layout_alignEnd="@+id/tomboltambah"
+
+            />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
